@@ -6,9 +6,8 @@
 
 1. Клонуйте репозиторій:
 ```bash
-git clone https://github.com/Oleksandr190378/data_science.git
-cd data_science
-git checkout search_terms
+git clone https://github.com/Oleksandr190378/search_terms.git
+cd search_terms
 ```
 
 2. Створіть та активуйте віртуальне середовище:
@@ -98,9 +97,8 @@ sudo apt install -y git-all
 ```bash
 mkdir -p ~/projects
 cd ~/projects
-git clone https://github.com/Oleksandr190378/data_science.git
-cd data_science
-git checkout search_terms
+git clone https://github.com/Oleksandr190378/search_terms.git
+cd search_terms
 ```
 
 3. **Створення та налаштування віртуального середовища**:
@@ -137,7 +135,7 @@ DAYS_BACK=10
 
 1. **Активація віртуального середовища**:
 ```bash
-cd ~/projects/data_science
+cd ~/projects/search_terms
 source venv/bin/activate
 ```
 
@@ -189,7 +187,7 @@ crontab -e
 
 2. **Додайте рядок для автоматичного запуску** (наприклад, щодня о 2:00):
 ```
-0 2 * * * cd ~/projects/data_science && source venv/bin/activate && python main_daily.py --period week --value $(date +\%V) --year $(date +\%Y) >> logs/cron_$(date +\%Y-\%m-\%d).log 2>&1 && deactivate
+0 2 * * * cd ~/projects/search_terms && source venv/bin/activate && python main_daily.py --period week --value $(date +\%V) --year $(date +\%Y) >> logs/cron_$(date +\%Y-\%m-\%d).log 2>&1 && deactivate
 ```
 
 ## Використання
