@@ -1,0 +1,11 @@
+greenlet
+numpy
+pandas
+psycopg2-binary
+python-dateutil
+python-dotenv
+pytz
+six
+SQLAlchemy
+typing_extensions
+tzdata
